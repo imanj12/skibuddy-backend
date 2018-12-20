@@ -4,4 +4,9 @@ Rails.application.routes.draw do
 
   # get 'users/:id/mountains,' to: 'users#mountains' 
 
+  get 'weather/histdata/:lat/:lon/:time', to: 'weather#getHistData', :constraints => {:lat => /\-?\d+(.\d+)?/, :lon => /\-?\d+(.\d+)?/}
+  get 'weather/forecast/:lat/:lon', to: 'weather#getForecast', :constraints => {:lat => /\-?\d+(.\d+)?/, :lon => /\-?\d+(.\d+)?/}
+
+  get 'geocode/:query', to: 'geocode#getLatLons'
+
 end

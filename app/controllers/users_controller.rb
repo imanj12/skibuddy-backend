@@ -17,10 +17,6 @@ class UsersController < ApplicationController
       render json: User.find(params[:id])
    end
 
-   # def mountains
-   #    render json: User.find(params[:id]).mountains
-   # end
-
    private
 
    def user_params
