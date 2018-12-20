@@ -15,4 +15,8 @@ wisp = Mountain.create(name: 'Wisp', city: 'McHenry', state: 'MD', trailmap: 'ht
 liberty = Mountain.create(name: 'Liberty', city: 'Carroll Valley', state: 'PA', trailmap: 'https://www.libertymountainresort.com/sites/default/files/wysiwyg/pdfs/LibertyMountainResort_TrailMap2015.pdf', url: 'https://www.libertymountainresort.com/', user_id: 1)
 whitetail = Mountain.create(name: 'Whitetail', city: 'Mercersburg', state: 'PA', trailmap: 'https://skiwhitetail.com/sites/default/files/Whitetail%20Trail%202018_0.pdf', url: 'https://skiwhitetail.com/', user_id: 1)
 
+washdc = Region.create(name: 'Washington, DC Area')
+denver = Region.create(name: 'Denver Area')
+tahoe = Region.create(name: 'Lake Tahoe')
+
 
