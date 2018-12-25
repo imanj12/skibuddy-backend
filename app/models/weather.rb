@@ -19,6 +19,7 @@ class Weather < ApplicationRecord
       key = ENV['DARKSKYKEY']
       url = "https://api.darksky.net/forecast/" + key + "/#{lat},#{lon},#{time}"
       response = HTTParty.get(url)
+      return response.parsed_response
    end
 
 end

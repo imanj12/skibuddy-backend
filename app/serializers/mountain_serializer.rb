@@ -1,3 +1,3 @@
 class MountainSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :region
 end
