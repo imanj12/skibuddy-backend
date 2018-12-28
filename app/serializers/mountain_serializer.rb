@@ -1,3 +1,3 @@
 class MountainSerializer < ActiveModel::Serializer
-  attributes :id, :name, :city, :state, :trailmap, :url, :user, :region
+  attributes :id, :user, :region, :name, :city, :state, :trailmap, :url
 end
