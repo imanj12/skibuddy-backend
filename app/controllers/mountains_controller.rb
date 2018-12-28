@@ -24,7 +24,7 @@ class MountainsController < ApplicationController
    private
 
    def mountain_params
-      params.require(:mountain).permit(:name, :location, :trailmap, :url)
+      params.require(:mountain).permit(:name, :city, :state, :trailmap, :url, :region_id, :user_id)
    end
 
 end

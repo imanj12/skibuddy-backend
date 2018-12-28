@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2018_12_19_162302) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
+    t.string "address"
     t.string "city"
     t.string "state"
     t.datetime "created_at", null: false
