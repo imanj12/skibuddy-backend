@@ -10,4 +10,5 @@ class UserSerializer < ActiveModel::Serializer
     end
     return customized_regions
   end
+  
 end

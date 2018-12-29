@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'bcrypt'
 
-iman = User.create(username: "iman", address: '1010 25th St. NW', city: 'Washington', state: 'DC')
+iman = User.create(username: "iman", address: '1010 25th St. NW', city: 'Washington', state: 'DC', password_digest: BCrypt::Password.create('iman'))
 
 timberline = Mountain.create(name: 'Timberline', city: 'Davis', state: 'WV', trailmap: 'http://www.timberlineresort.com/pdfs/Timberline%20Trail%20Map.pdf', url: 'http://www.timberlineresort.com/', user_id: 1, region_id: 1)
 snowshow = Mountain.create(name: 'Snowshoe', city: 'Snowshoe', state: 'WV', trailmap: 'https://www.snowshoemtn.com/-/media/Snowshoe/Maps/pdf/SN_18_Winter_Trailmap_Web.pdf', url: 'https://www.snowshoemtn.com/', user_id: 1, region_id: 1)
