@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
   get 'geocode/:query', to: 'geocode#getLatLons'
 
+  get 'drivetime/:street/:city/:state/:destLat/:destLon', to: 'drivetime#getTime', :constraints => {:lat => /\-?\d+(.\d+)?/, :lon => /\-?\d+(.\d+)?/}
+
 end
