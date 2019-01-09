@@ -12,4 +12,4 @@ namespace :db do
      puts 'dropping, creating, migrating, and seeding.'
    end
    
- end
+end
