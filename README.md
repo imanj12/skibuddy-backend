@@ -10,15 +10,15 @@ This is a straightforward Rails API backend using a PostgreSQL database. To set 
 
 The model relationships are as follows:
 
-![Scribe Models](storage/scribe_models.png?raw=true "Scribe Models")
+![SkiBuddy Models](storage/skibuddy_models.png?raw=true "SkiBuddy Models")
 
 ## Environment Variables
 
-Several environment variables will need to be configured before the app can work.
+Three environment variables will need to be configured before the app can work.
 
 ### JWT
 
-User authentication is done using JSON Web Tokens. A JWT secret must be provided as a local environment variable with the name `JWTSECRET` for the current controller configurations to work.
+User authentication is done using JSON Web Tokens. A JWT secret must be provided as a local environment variable with the name `JWTSECRET` for the current auth controller configurations to work.
 
 ### Dark Sky API
 
