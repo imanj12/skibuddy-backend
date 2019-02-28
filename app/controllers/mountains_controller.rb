@@ -9,12 +9,22 @@ class MountainsController < ApplicationController
    end
 
    def create
-      render json: Mountain.create(mountain_params)
+      @mountain = Mountain.create(mountain_params)
+      if @mountain.valid?
+         render json: @mountain
+      else
+         render json: { errors: @mountain.errors }
+      end
+      # render json: Mountain.create(mountain_params)
    end
 
    def update
-      Mountain.find(params[:id]).update(mountain_params)
-      render json: Mountain.find(params[:id])
+      if Mountain.find(params[:id]).update(mountain_params)
+         render json: Mountain.find(params[:id])
+      else
+         render json: { errors: 'Name has already been taken' }
+      end
+      # render json: Mountain.find(params[:id])
    end
 
    def destroy
