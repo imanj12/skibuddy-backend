@@ -1,24 +1,29 @@
-# README
+# SkiBuddy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SkiBuddy uses a React [frontend](https://github.com/imanj12/skibuddy-frontend) and Rails backend.
 
-Things you may want to cover:
+SkiBuddy helps you quickly check real-time and forecast weather conditions and browse an interactive trail map at most, if not all, ski resorts in the United States.
 
-* Ruby version
+## Details
 
-* System dependencies
+This is a straightforward Rails API backend using a PostgreSQL database. To set it up, simply create the database and run the migrations.
 
-* Configuration
+The model relationships are as follows:
 
-* Database creation
+![Scribe Models](storage/scribe_models.png?raw=true "Scribe Models")
 
-* Database initialization
+## Environment Variables
 
-* How to run the test suite
+Several environment variables will need to be configured before the app can work.
 
-* Services (job queues, cache servers, search engines, etc.)
+### JWT
 
-* Deployment instructions
+User authentication is done using JSON Web Tokens. A JWT secret must be provided as a local environment variable with the name `JWTSECRET` for the current controller configurations to work.
 
-* ...
+### Dark Sky API
+
+Weather information is dependent on the Dark Sky API. A Dark SKY API key must be provided with the name `DARKSKYKEY`.
+
+### Google Places & Geolocation API
+
+Both the Google Places and the Google Geolocation API are used in this app. One API key should work for both, and will need to be retrieved from the Google Developer Console. The environment variable should have the name `GOOGLEMAPSKEY`.
