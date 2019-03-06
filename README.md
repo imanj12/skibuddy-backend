@@ -6,7 +6,9 @@ SkiBuddy helps you quickly check real-time and forecast weather conditions and b
 
 ## Details
 
-This is a straightforward Rails RESTful API backend using a PostgreSQL database. To set it up, simply create the database and run the migrations. Note: there are some non-RESTful routes that handle connecting the frontend with third-party APIs.
+This is a straightforward Rails RESTful API backend using a PostgreSQL database. To set it up, simply create the database and run the migrations. 
+
+Note: there are some non-RESTful routes that handle connecting the frontend with third-party APIs.
 
 The model relationships are as follows:
 
