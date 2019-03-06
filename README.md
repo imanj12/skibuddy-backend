@@ -1,12 +1,12 @@
 # SkiBuddy
 
-SkiBuddy uses a React [frontend](https://github.com/imanj12/skibuddy-frontend) and RESTful Rails backend.
+SkiBuddy uses a React [frontend](https://github.com/imanj12/skibuddy-frontend) and a Rails backend.
 
 SkiBuddy helps you quickly check real-time and forecast weather conditions and browse an interactive trail map at most, if not all, ski resorts in the United States.
 
 ## Details
 
-This is a straightforward Rails API backend using a PostgreSQL database. To set it up, simply create the database and run the migrations.
+This is a straightforward Rails RESTful API backend using a PostgreSQL database. To set it up, simply create the database and run the migrations. Note: there are some non-RESTful routes that handle connecting the frontend with third-party APIs.
 
 The model relationships are as follows:
 
@@ -14,7 +14,7 @@ The model relationships are as follows:
 
 ## Environment Variables & Third-Party APIs
 
-Three environment variables will need to be configured before the app can work.
+Three environment variables will need to be configured in order to make the third-party APIs work and provide some of the core functionality of SkiBuddy.
 
 ### JWT
 
